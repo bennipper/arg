@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<style>
+	
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+body {
+  background-image:url("Assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+	
+div{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(20px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+ 
+	
+	
+	</style>
+<body style="background-color: black;">
+	
+
+	
+<div style="width: 80%; align-content: center; margin: auto; padding-top: 20vh">
+	
+<div><img src="Assets/NC63fUu7PzuRT6fL.svg" style="width: 100px; display:block; margin:auto;"></div>
+		
+	<div><h1 style="color: white; text-align: center; font-size:80px; margin-top: 0px; margin-bottom: 10px;">请停止
+
+
+
+</h1></div>
+	
+	<p style="color: aqua; max-width: 80%; text-align: center; padding-bottom: 30px; max-width: 600px; margin-top: 10px; margin: auto;">
+	当这个怪物进入我的大脑时，我永远不会知道，但是它将留在这里。一个人怎么能自愈？我无法阻止它，怪物继续伤害着我和社会。也许你可以阻止他。我不能
+
+	</p>
+	
+	<div>
+	<table style="width: 100%;">
+	<tr>
+	<td>
+	<select style="width: 100%;" id="cars" name="cars">
+    <option value="volvo">P</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+	</td>
+		
+	<td>
+	<select style="width: 100%;" id="cars" name="cars">
+    <option value="volvo">A</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+	</td>
+	
+	<td>
+	<select style="width: 100%;" id="cars" name="cars">
+    <option value="volvo">P</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+	</td>
+		
+	<td>
+	<select style="width: 100%;" id="cars" name="cars">
+    <option value="volvo">E</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+	</td>
+		
+	<td>
+	<select style="width: 100%;" id="cars" name="cars">
+    <option value="volvo">R</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+	</td>
+	</tr>
+	</table>
+	
+	<table style="width: 100%; text-align: center;">
+	<tr>
+	<td><input type="submit"></td>
+	</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>

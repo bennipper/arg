@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body style="background-color:#00233a; font-family: Consolas, 'Lucida Console', Monaco, 'monospace'; color: #cd8b8b;">
+	
+	<!--
+	
+	UPDATE NOTE v3.51
+
+•	We've created a master login for any cheif cunstables who 		need to access all of their departments case IDs. Please 		note down the password and change it as soon as you can. 
+	The details are as follows:
+
+	User: admin
+	Password: kKZtJMAMqpH9CKL
+
+•	Status indicator has been added to each upload.
+
+•	General bug fixes
+
+
+	-->
+	
+<style>
+	
+	input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+		border: 2px solid #cd8b8b;
+		background-color: #00233a;
+}
+	input[type=user] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+	border: 2px solid #cd8b8b;
+	background-color: #00233a;
+}
+	input[type=button], input[type=submit], input[type=reset] {
+  background-color: #cd8b8b;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+width: 100%;
+		border-radius: 0px;
+}
+		
+</style>
+<div style="padding: 30px;">
+	<table>
+	<tr>
+		<td><img src="https://upload.wikimedia.org/wikipedia/en/1/18/Toronto_Police_Service_Logo.svg" style="width: 100px; padding-right: 20px;"></td>
+		<td style="width: 100%;"><h1><span style="background-color: #383e4f">SAXFORD&nbsp;POLICE&nbsp;DEPARTMENT</span><br>
+		  <span style="font-size: 15px; background-color: #383e4f" >DIGITAL EVIDENCE DATABASE (D.E.D) v3.51</span></h1></td>
+	</tr>
+	</table>
+</div>
+	<table width="100%">
+	<tr>
+		<td style="padding-left: 30px; padding-right: 30px;">--------------------------------------------------------------</td>
+	  </tr></table>
+	
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width: 100%;}
+	
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:30px ;word-break:normal;}
+	
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding-left:30px; padding-top: 15px; padding-bottom: 15px; word-break:normal;}
+	
+.tg .tg-36ju{background-color:#393f50;border-color:#cd8b8b;color:#cd8b8b;
+  font-family:"Lucida Console", Monaco, monospace !important;;font-size:100%;font-weight:bold;text-align:left;
+  vertical-align:top}
+	
+.tg .tg-wkkn{background-color:#132c42;border-color:#cd8b8b;color:#cd8b8b;
+  font-family:"Lucida Console", Monaco, monospace !important;;text-align:left;vertical-align:top}
+</style>
+<div style="padding: 30px; max-width: 550px;">
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-36ju"><span style="font-weight:bold">LOGIN</span></th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-wkkn">
+		<form>
+	<label for="fname">USERNAME</label><br>
+    <input style="color: #cd8b8b; font-size: 12px; font-family: Consolas, 'Lucida Console', Monaco, 'monospace';" type="user" id="user">
+    <br>
+		<label for="fname">PASSWORD</label><br>
+	<input style="margin-bottom: 20px; color: #cd8b8b; font-size: 12px; font-family: Consolas, 'Lucida Console', Monaco, 'monospace';" type="password" id="pswd">
+    <br>
+	<input style="font-family: Consolas, 'Lucida Console', Monaco, 'monospace'; font-size: 12px;" type="button" value="SUBMIT" onclick="checkPswd();" />
+</form></td>
+    </tr>
+
+</tbody>
+</table>
+	</div>
+
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "kKZtJMAMqpH9CKL";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="Untitled-1.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+	
+	
+	
+<div style="padding: 30px;">
+--------------------------------------------------------------
+	
+</div>
+</body>
+</html>
